@@ -3,7 +3,7 @@ layout: post
 title:  "Test"
 subtitle:   "Test"
 categories: std
-tags: Script_programing
+tags: Script_Programing
 ---
 
 가볍게 시작했던건데 예전에 해보고 싶었던 것들과 겹쳐 갑자기 하고싶은 것들이 많아졌다.
