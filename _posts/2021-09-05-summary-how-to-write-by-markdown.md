@@ -33,29 +33,29 @@ tags: Summary
 # 2. 마크다운 사용법(문법)
 ## 2.1. 헤더_Headers
 - 큰 제목: 문서 제목
-> 문법:
+
   ```
   This is an H1
   =============
   ```
-> 적용예시:
+
 
   This is an H1
   =============
 - 작은 제목: 문서 부제목
 
-> 문법:
+
 ```
 This is an H2
 ```
 
-> 적용예시:
+
 
   This is an H2
   -------------
   
 - 글머리: 1~6까지만 지원
-> 문법: 
+
 ```
 # This is a H1
 ## This is a H2
@@ -65,7 +65,7 @@ This is an H2
 ###### This is a H6
 ```
 
-> 적용예시:
+
 # This is a H1
 ## This is a H2
 ### This is a H3
@@ -114,7 +114,7 @@ This is an H2
 2. 두번째
 
 - 순서없는 목록(글러미 기호: `*`, `+`, `-` 지원)
-> 문법:
+
 ```
 * 빨강
   * 파랑
@@ -126,7 +126,7 @@ This is an H2
   - 파랑
     - 노랑
  ```
-> 적용예시:
+
 * 빨강
   * 파랑
     * 노랑
@@ -138,22 +138,21 @@ This is an H2
     - 노랑
 
 혼합해서 사용도 가능하다.
-> 문법:
+
 ```
 * 1단계
   - 2단계
     + 3단계
 ```
-> 적용예시:
+
 * 1단계
   - 2단계
     + 3단계
 
 ## 2.4. 코드_Code
 4개의 공백(Spacebar) 또는 하나의 탭(Tab)으로 들여쓰기를 만나면 변환되기 시작하여 들여쓰지 않은 행을 만날때까지 변환이 계속된다.
-### 2.4.1. 들여쓰기_indent
 
-> 문법: 
+### 2.4.1. 들여쓰기_indent
 
 ```
 This is a normal paragraph:
@@ -162,8 +161,6 @@ This is a normal paragraph:
 
 end intented sentence.
 ```
-
-> 적용예시:
 
 ***
 This is a normal paragraph:
@@ -180,7 +177,6 @@ This is a normal paragraph:
   This is an intented sentence.
 end intented sentence.
 ```
-> 적용예시:
 
 ***
 This is a normal paragraph:
@@ -193,8 +189,6 @@ end intented sentence.
 
 - `<pre><code>{code}</code></pre>` 태그를 이용하는 방법
 
-> 문법:
-
 ```
 <pre>
 <code>
@@ -206,8 +200,6 @@ public class BootSpringBootApplication{
 </code>
 </pre>
 ```
-
-> 적용예시:
 
 <pre>
 <code>
@@ -222,8 +214,6 @@ public class BootSpringBootApplication {
 
 - 코드 블럭 코드(" ``` ")을 이용하는 방법
 
-> 문법: 
-
 <pre>
 ```
 public class BootSpringBootApplication {
@@ -234,8 +224,6 @@ public class BootSpringBootApplication {
 ```
 </pre>
 
-> 적용예시:
-
 ```
 public class BootSpringBootApplication {
   public static void main(String[] args) {
@@ -244,9 +232,7 @@ public class BootSpringBootApplication {
 }
 ```
 
-- 깃헙(github)에서는 코드 블럭 코드(" ``` ")시작점에 사용하는 언어를 선언하여 [문법강조(Syntax highlighting)](https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks#syntax-highlighting)이 가능하다.
-
-> 문법:
+- 깃헙(github)에서는 코드 블럭 코드(' ``` '시작점에 사용하는 언어를 선언하여 [문법강조(Syntax highlighting)](https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks#syntax-highlighting)이 가능하다.
 
 <pre>
 ```java
@@ -257,8 +243,6 @@ public class BootSpringBootApplication {
 }
 ```
 </pre>
-
-> 적용예시:
 
 ```java
 public class BootSpringBootApplication {
@@ -271,8 +255,6 @@ public class BootSpringBootApplication {
 ## 2.5. 수평선 `<hr/>` 
 아래 줄은 모두 수평선을 만든다. 마크다운 문서를 미리보기로 출력할 때 _페이지 나누기_ 용도로 많이 사용한다.
 
-> 문법:
-
 ```
 * * *
 ***
@@ -280,8 +262,6 @@ public class BootSpringBootApplication {
 - - -
 -------------------------
 ```
-
-> 적용예시:
 
 * * *
 ***
@@ -336,8 +316,6 @@ Link: [Google](https://google.com, "google link")
 
 ## 2.7. 강조 `<em>`
 
-> 문법:
-
 ```
 *single asterisks*
 _single underscores_
@@ -345,8 +323,6 @@ _single underscores_
 __double underscores__
 ~~canceline~~
 ```
-
-> 적용예시:
 
 - *single asterisks*
 - _single underscores_
