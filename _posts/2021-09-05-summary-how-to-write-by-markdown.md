@@ -135,7 +135,7 @@ This is an H2
   - 파랑
     - 노랑
 
-> 혼합해서 사용도 가능하다.
+혼합해서 사용도 가능하다.
 
 ```
 * 1단계
@@ -281,7 +281,7 @@ Link: [Google][googlelink]
 [googlelink]: https://google.com "
 ```
 
-Link: [Google][googlelink]
+Link: [Google][googlelink]   
 [googlelink]: https://google.com "go google"
 
 - 외부링크
@@ -315,6 +315,7 @@ Link: [Google](https://google.com, "google link")
 ## 2.7. 강조 `<em>`
 
 ```
+문장 중간에 사용할 경우에는 앞뒤로 띄어쓰기를 해주는 것이 좋다.
 *single asterisks*
 _single underscores_
 **double asterisks**
@@ -327,8 +328,6 @@ __double underscores__
 - **double asterisks**
 - __double underscores__
 - ~~canceline~~
-
-> 문장 중간에 사용할 경우에는 앞뒤로 띄어쓰기를 해주는 것이 좋다.
 
 ## 2.8. 이미지_Image
 
@@ -408,15 +407,11 @@ __double underscores__
 
 ## 2.11. 주석
 
-> 문법:
-
 ```
 <!--
 마크다운에서 주석 처리하기
 -->
 ```
-
-> 적용예시:
 
 <!--
 마크다운에서 주석 처리하기
