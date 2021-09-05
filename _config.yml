@@ -13,13 +13,13 @@ url:                 https://patiencelee.github.io
 baseurl:             ""
 
 # A very short description of your page
-tagline:             서두르지 않되, 멈추지 않는 개발자
+tagline:             서두르지 않되, 꼼꼼한 개발자
 
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:         >
-  게으르기 때문에 게발자.
-  글쓰는 걸 좋아하고, 디자인과 개발을 좋아한다.
+  Sin pausa, Sin porsa
+  서두르지 말되, 멈추지 말자
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
