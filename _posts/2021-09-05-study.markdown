@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[48wedding] test"
-subtitle:   "[48wedding] test"
+title:  "Test"
+subtitle:   "Test"
 categories: std
 tags: Script_programing
 ---
