@@ -1,7 +1,7 @@
 ---
 layout: list
-title: Documents
-slug: doc
+title: Study
+slug: std
 menu: true
 submenu: true
 order: 7
