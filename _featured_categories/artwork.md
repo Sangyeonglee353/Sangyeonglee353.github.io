@@ -2,7 +2,7 @@
 layout: list
 title: Artwork
 slug: artwork
-menu: true 
+menu: false 
 submenu: false
 order: 1
 description: >
