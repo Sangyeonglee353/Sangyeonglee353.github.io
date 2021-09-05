@@ -388,7 +388,7 @@ __double underscores__
 <img src="/assets/img/pl_sample.jpg" width="450px" height="300px" title="Programmer" alt="Programmer"></img><br/>
 <img src="/assets/img/pl_sample.jpg" width="450px" height="300px" title="Programmer" alt="Programmer"></img>
 
-# 2.9. 줄바꿈 `<br/>`
+## 2.9. 줄바꿈 `<br/>`
 3칸 이상 띄어쓰기(`   `)를 하면 줄이 바뀐다.
 
 ```
@@ -398,7 +398,7 @@ __double underscores__
 * 줄 바꿈을 하기 위해서는 문자 마지막에서 3칸 이상 띄어쓰기를 해야 한다.   
 줄바꿈 짠!!
 
-# 2.10. 표 `<table>...</table>`
+## 2.10. 표 `<table>...</table>`
 - 기본 구조
 
 ```
@@ -434,7 +434,7 @@ __double underscores__
 | Kim  | Simple is the Best! | 30 |
 | Yun  | We are the Champions! | 45 |
 
-# 2.11. 주석
+## 2.11. 주석
 
 > 문법:
 
@@ -450,7 +450,7 @@ __double underscores__
 마크다운에서 주석 처리하기
 -->
 
-# 2.12. 각주 `<sup>...</sup>`
+## 2.12. 각주 `<sup>...</sup>`
 본문의 어떤 부분을 설명하거나 보충하기 위해 본문 아래쪽에 별도로 작성하는 간단한 설명문으로서 주로 내용의 출처를 밝힐 때 사용됩니다.
 
 ```
@@ -462,7 +462,7 @@ __double underscores__
 
 [\^scala] : 스칼라는 마틴 오더스크가 개발한 함수형 언어이다.
 
-# 2.13 목차 생성하기
+## 2.13 목차 생성하기
 문서 내에 사용된 헤딩 태그등을 이용하여 '{:toc}'입력 시 목차가 자동 생성된다. 상단 목차 참고.
 
 # 3. 마크다운 사용기
