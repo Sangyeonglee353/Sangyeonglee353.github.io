@@ -18,7 +18,8 @@ tagline:             서두르지 않되, 꼼꼼한 개발자
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:         >
-  Sin pausa, Sin porsa</br>   
+  Sin pausa, Sin porsa
+  
   서두르지 말되, 멈추지 말자
 
 # This should be the same author as first entry in `_data/authors.yml`
