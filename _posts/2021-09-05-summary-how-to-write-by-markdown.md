@@ -90,6 +90,7 @@ This is an H2
 ## 2.3 목록_List
 - 순서있는 목록(번호)
 순서있는 목록은 숫자와 점을 이용한다.
+
 ```
 1. 첫번째
 2. 두번째
@@ -100,6 +101,7 @@ This is an H2
 3. 세번째
 
 현재까지는 어떤 번호를 입력해도 순서는 자동으로 내림차순으로 정의된다.
+
 ```
 1. 첫번째
 3. 세번째
@@ -133,7 +135,7 @@ This is an H2
   - 파랑
     - 노랑
 
-혼합해서 사용도 가능하다.
+> 혼합해서 사용도 가능하다.
 
 ```
 * 1단계
@@ -163,8 +165,8 @@ This is a normal paragraph:
    
     This is an intented sentence.
    
-end intented sentence.
-***
+end intented sentence.   
+***   
 
 > 줄바꿈을 하지 않으면 인식이 제대로 안되는 문제가 발생한다.
 
@@ -177,8 +179,8 @@ end intented sentence.
 ***
 This is a normal paragraph:
   This is an intented sentence.
-end intented sentence.
-***
+end intented sentence.   
+***   
 
 ### 2.4.2 코드 블럭
 코드 블럭은 다음과 같이 2가지 방식을 사용할 수 있습니다.
