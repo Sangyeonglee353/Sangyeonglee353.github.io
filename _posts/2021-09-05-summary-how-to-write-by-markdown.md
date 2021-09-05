@@ -336,8 +336,8 @@ __double underscores__
 ![Alt text](/path/to/img.jpg)
 ![Alt text](/path/to/img.jpg "Optional title")
 ```
-![Programmer](/asset/img/sample.jpg)
-![Programmer](/asset/img/sample.jpg "Programmer")
+![Programmer](/asset/img/pl_sample.jpg)
+![Programmer](/asset/img/pl_sample.jpg "Programmer")
 
 
 
