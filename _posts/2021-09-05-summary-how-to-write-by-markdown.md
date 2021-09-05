@@ -154,7 +154,9 @@ This is an H2
 ## 2.4. 코드_Code
 4개의 공백(Spacebar) 또는 하나의 탭(Tab)으로 들여쓰기를 만나면 변환되기 시작하여 들여쓰지 않은 행을 만날때까지 변환이 계속된다.
 ### 2.4.1. 들여쓰기_indent
+
 > 문법: 
+
 ```
 This is a normal paragraph:
 
@@ -164,6 +166,7 @@ end intented sentence.
 ```
 
 > 적용예시:
+
 ***
 This is a normal paragraph:
    
@@ -171,22 +174,29 @@ This is a normal paragraph:
    
 end intented sentence.
 ***
+
 > 줄바꿈을 하지 않으면 인식이 제대로 안되는 문제가 발생한다.
+
 ```
 This is a normal paragraph:
   This is an intented sentence.
 end intented sentence.
 ```
 > 적용예시:
+
 ***
 This is a normal paragraph:
   This is an intented sentence.
 end intented sentence.
 ***
+
 ### 2.4.2 코드 블럭
 코드 블럭은 다음과 같이 2가지 방식을 사용할 수 있습니다.
+
 - `<pre><code>{code}</code></pre>` 태그를 이용하는 방법
+
 > 문법:
+
 ```
 <pre>
 <code>
@@ -198,7 +208,9 @@ public class BootSpringBootApplication{
 </code>
 </pre>
 ```
+
 > 적용예시:
+
 <pre>
 <code>
 public class BootSpringBootApplication {
@@ -209,9 +221,11 @@ public class BootSpringBootApplication {
 </code>
 </pre>
 
+
 - 코드 블럭 코드(" ``` ")을 이용하는 방법
 
 > 문법: 
+
 <pre>
 ```
 public class BootSpringBootApplication {
@@ -223,6 +237,7 @@ public class BootSpringBootApplication {
 </pre>
 
 > 적용예시:
+
 ```
 public class BootSpringBootApplication {
   public static void main(String[] args) {
@@ -234,6 +249,7 @@ public class BootSpringBootApplication {
 - 깃헙(github)에서는 코드 블럭 코드(" ``` ")시작점에 사용하는 언어를 선언하여 [문법강조(Syntax highlighting)](https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks#syntax-highlighting)이 가능하다.
 
 > 문법:
+
 <pre>
 ```java
 public class BootSpringBootApplication {
@@ -245,6 +261,7 @@ public class BootSpringBootApplication {
 </pre>
 
 > 적용예시:
+
 ```java
 public class BootSpringBootApplication {
   public static void main(String[] args) {
@@ -252,10 +269,12 @@ public class BootSpringBootApplication {
   }
 }
 ```
+
 ## 2.5. 수평선 `<hr/>` 
 아래 줄은 모두 수평선을 만든다. 마크다운 문서를 미리보기로 출력할 때 _페이지 나누기_ 용도로 많이 사용한다.
 
 > 문법:
+
 ```
 * * *
 ***
@@ -265,6 +284,7 @@ public class BootSpringBootApplication {
 ```
 
 > 적용예시:
+
 * * *
 ***
 *****
@@ -273,6 +293,7 @@ public class BootSpringBootApplication {
 
 ## 2.6. 링크_Link
 - 참조링크
+
 ```
 키워드에 링크를 넣는 형태 1
 // 문법
@@ -283,10 +304,12 @@ public class BootSpringBootApplication {
 Link: [Google][googlelink]
 [googlelink]: https://google.com "
 ```
+
 Link: [Google][googlelink]
 [googlelink]: https://google.com "go google"
 
 - 외부링크
+
 ```
 키워드에 링크를 넣는 형태 2
 // 문법
@@ -295,9 +318,11 @@ Link: [Google][googlelink]
 // 적용코드
 Link: [Google](https://google.com, "google link")
 ```
+
 Link: [Google](https://google.com, "google link")
 
 - 자동연결
+
 ```
 주소 URL 자체에 링크를 넣는 형태
 // 문법
@@ -307,11 +332,14 @@ Link: [Google](https://google.com, "google link")
 * 외부링크: <https://google.com>
 * 이메일링크: <address@example.com>
 ```
+
 * 외부링크: <https://google.com>
 * 이메일링크: <address@example.com>
 
 ## 2.7. 강조 `<em>`
+
 > 문법:
+
 ```
 *single asterisks*
 _single underscores_
@@ -319,7 +347,9 @@ _single underscores_
 __double underscores__
 ~~canceline~~
 ```
+
 > 적용예시:
+
 - *single asterisks*
 - _single underscores_
 - **double asterisks**
@@ -329,6 +359,7 @@ __double underscores__
 > 문장 중간에 사용할 경우에는 앞뒤로 띄어쓰기를 해주는 것이 좋다.
 
 ## 2.8. 이미지_Image
+
 ```
 // 문법
 ![대체 텍스트](이미지 경로)
@@ -343,6 +374,7 @@ __double underscores__
 ![Programmer](/assets/img/pl_sample.jpg "Programmer")
 
 > 마크다운 문법에서는 이미지 크기 조절을 따로 지원하지 않는다. 
+
 ```
 따라서 HTML의 <img src="" width="" height=""> 태그를 이용한다.
 // 문법
@@ -358,16 +390,17 @@ __double underscores__
 
 # 2.9. 줄바꿈 `<br/>`
 3칸 이상 띄어쓰기(`   `)를 하면 줄이 바뀐다.
+
 ```
 * 줄 바꿈을 하기 위해서는 문자 마지막에서 3칸 이상 띄어쓰기를 해야 한다.___ <- 띄어쓰기
 줄바꿈 짠!!
 ```
 * 줄 바꿈을 하기 위해서는 문자 마지막에서 3칸 이상 띄어쓰기를 해야 한다.   
 줄바꿈 짠!!
-***
 
 # 2.10. 표 `<table>...</table>`
 - 기본 구조
+
 ```
 | name | description | age |
 | ---- | ----------- | --- |
@@ -375,15 +408,18 @@ __double underscores__
 | Kim  | Simple is the Best! | 30 |
 | Yun  | We are the Champions! | 45 |
 ```
+
 | name | description | age |
 | ---- | ----------- | --- |
 | Lee  | You can do it! | 25 |
 | Kim  | Simple is the Best! | 30 |
 | Yun  | We are the Champions! | 45 |
+
 - 표 정렬
   - 왼쪽 정렬 :--
   - 오른쪽 정렬 --:
   - 가운데 정렬 :--:
+
 ```
 | name | description | age |
 | :---- | -----------: | :---: |
@@ -391,6 +427,7 @@ __double underscores__
 | Kim  | Simple is the Best! | 30 |
 | Yun  | We are the Champions! | 45 |
 ```
+
 | name | description | age |
 | :---- | -----------: | :---: |
 | Lee  | You can do it! | 25 |
@@ -398,26 +435,32 @@ __double underscores__
 | Yun  | We are the Champions! | 45 |
 
 # 2.11. 주석
+
 > 문법:
+
 ```
 <!--
 마크다운에서 주석 처리하기
 -->
 ```
+
 > 적용예시:
+
 <!--
 마크다운에서 주석 처리하기
 -->
 
 # 2.12. 각주 `<sup>...</sup>`
 본문의 어떤 부분을 설명하거나 보충하기 위해 본문 아래쪽에 별도로 작성하는 간단한 설명문으로서 주로 내용의 출처를 밝힐 때 사용됩니다.
+
 ```
 최근 스칼라는 매우 인기가 높은 언어이다.[^scala]
 [\^scala]: 스칼라는 마틴 오더스크가 개발한 함수형 언어이다.
 ```
 
 최근 스칼라는 매우 인기가 높은 언어이다.[^scala]
-[\\^scala] : 스칼라는 마틴 오더스크가 개발한 함수형 언어이다.
+
+[\^scala] : 스칼라는 마틴 오더스크가 개발한 함수형 언어이다.
 
 # 2.13 목차 생성하기
 문서 내에 사용된 헤딩 태그등을 이용하여 '{:toc}'입력 시 목차가 자동 생성된다. 상단 목차 참고.
