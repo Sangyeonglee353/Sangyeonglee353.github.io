@@ -349,15 +349,15 @@ __double underscores__
 ```
 따라서 HTML의 <img src="" width="" height=""> 태그를 이용한다.
 // 문법
-<img src="이미지 경로" width="가로넓이" height="세로넓이" title="포인터 텍스트" alt="대체 텍스트"></img>
+<img src="이미지 경로" width="가로넓이" height="세로넓이" title="포인터 텍스트" alt="대체 텍스트">
 
 // 적용코드
-<img src="/assets/img/pl_sample.jpg" width="450px" height="300px" title="Programmer" alt="Programmer"></img><br/>
-<img src="/assets/img/pl_sample.jpg" width="450px" height="300px" title="Programmer" alt="Programmer"></img>
+<img src="/assets/img/pl_sample.jpg" width="450px" height="300px" title="Programmer" alt="Programmer"><br/>
+<img src="/assets/img/pl_sample.jpg" width="450px" height="300px" title="Programmer" alt="Programmer">
 ```
 
-<img src="/assets/img/pl_sample.jpg" width="450px" height="300px" title="Programmer" alt="Programmer"></img><br/>
-<img src="/assets/img/pl_sample.jpg" width="450px" height="300px" title="Programmer" alt="Programmer"></img>
+<img src="/assets/img/pl_sample.jpg" width="450px" height="300px" title="Programmer" alt="Programmer"><br/>
+<img src="/assets/img/pl_sample.jpg" width="450px" height="300px" title="Programmer" alt="Programmer">
 
 ## 2.9. 줄바꿈 `<br/>`
 3칸 이상 띄어쓰기(`   `)를 하면 줄이 바뀐다.
