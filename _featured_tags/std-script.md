@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: Script_programing
-slug: Script_programing
+title: Script_Programing
+slug: Script_Programing
 category: std
 menu: false
 order: 1
