@@ -27,7 +27,7 @@ author:
   email:             sangyeong.lee353@gmail.com
 
 # Fallback image and color
-image:               /assets/img/nap.jpg
+image:               /assets/img/main_bg.jpg
 color:               '#4f86aa'
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
