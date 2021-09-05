@@ -229,4 +229,116 @@ public class BootSpringBootApplication {
 }
 ```
 
-> 깃헙(github)에서는 코드 블럭 코드(" ``` ")시작점에 사용하는 언어를 선언하여 [문법강조(Syntax highlighting)](https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks#syntax-highlighting)이 가능하다.
+- 깃헙(github)에서는 코드 블럭 코드(" ``` ")시작점에 사용하는 언어를 선언하여 [문법강조(Syntax highlighting)](https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks#syntax-highlighting)이 가능하다.
+
+> 문법:
+<pre>
+```java
+public class BootSpringBootApplication {
+  public static void main(String[] args) {
+    System.out.println("Hello, Github");
+  }
+}
+```
+</pre>
+
+> 적용예시:
+```java
+public class BootSpringBootApplication {
+  public static void main(String[] args) {
+    System.out.println("Hello, Github");
+  }
+}
+```
+# 2.5. 수평선 `<hr/>` 
+아래 줄은 모두 수평선을 만든다. 마크다운 문서를 미리보기로 출력할 때 _페이지 나누기_ 용도로 많이 사용한다.
+
+> 문법:
+```
+* * *
+***
+*****
+- - -
+-------------------------
+```
+
+> 적용예시:
+* * *
+***
+*****
+- - -
+-------------------------
+
+# 2.6. 링크_Link
+- 참조링크
+```
+키워드에 링크를 넣는 형태 1
+// 문법
+[link keyword][id]
+[id]: URL "Optional Title here"
+
+// 적용코드
+Link: [Google][googlelink]
+[googlelink]: https://google.com "
+```
+Link: [Google][googlelink]
+[googlelink]: https://google.com "go google"
+
+- 외부링크
+```
+키워드에 링크를 넣는 형태 2
+// 문법
+[Title](link)
+
+// 적용코드
+Link: [Google](https://google.com, "google link")
+```
+Link: [Google](https://google.com, "google link")
+
+- 자동연결
+```
+주소 URL 자체에 링크를 넣는 형태
+// 문법
+<link>
+
+// 적용코드
+* 외부링크: <https://google.com>
+* 이메일링크: <address@example.com>
+```
+* 외부링크: <https://google.com>
+* 이메일링크: <address@example.com>
+
+# 2.7. 강조
+> 문법:
+```
+*single asterisks*
+_single underscores_
+**double asterisks**
+__double underscores__
+~~canceline~~
+```
+> 적용예시:
+- *single asterisks*
+- _single underscores_
+- **double asterisks**
+- __double underscores__
+- ~~canceline~~
+
+> 문장 중간에 사용할 경우에는 앞뒤로 띄어쓰기를 해주는 것이 좋다.
+
+# 2.8. 이미지_Image
+```
+// 문법
+![대체 텍스트](이미지 경로)
+![대체 텍스트](이미지 경로 "포인터 텍스트")
+
+// 적용코드
+![Alt text](/path/to/img.jpg)
+![Alt text](/path/to/img.jpg "Optional title")
+```
+![Programmer](/asset/img/sample.jpg)
+![Programmer](/asset/img/sample.jpg "Programmer")
+
+
+
+
