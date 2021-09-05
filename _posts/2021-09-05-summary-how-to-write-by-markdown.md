@@ -34,25 +34,22 @@ tags: Summary
 ## 2.1. 헤더_Headers
 - 큰 제목: 문서 제목
 
-  ```
-  This is an H1
-  =============
-  ```
+```
+This is an H1
+=============
+```
 
-
-  This is an H1
-  =============
+This is an H1
+=============
+  
 - 작은 제목: 문서 부제목
-
 
 ```
 This is an H2
 ```
 
-
-
-  This is an H2
-  -------------
+This is an H2
+-------------   
   
 - 글머리: 1~6까지만 지원
 
@@ -64,7 +61,6 @@ This is an H2
 ##### This is a H5
 ###### This is a H6
 ```
-
 
 # This is a H1
 ## This is a H2
