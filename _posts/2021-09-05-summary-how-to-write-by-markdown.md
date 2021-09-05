@@ -5,8 +5,6 @@ subtitle:   "[기초문법] Markdown_마크다운"
 categories: Summary
 tags: Summary
 ---
-<!-- 목차 생성-->
-{:toc}
 
 # 1. 마크다운에 관하여
 ## 1.1. 마크다운이란?
