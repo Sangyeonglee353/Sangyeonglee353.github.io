@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
 title: Data_Structure
-slug: dataStructure
+slug: Data_Structure
 category: std
 menu: false
 order: 1
