@@ -33,33 +33,45 @@ tags: Summary
 # 2. 마크다운 사용법(문법)
 ## 2.1. 헤더_Headers
 - 큰 제목: 문서 제목
+> 문법:
   ```
   This is an H1
   =============
   ```
+> 적용예시:
+
   This is an H1
   =============
 - 작은 제목: 문서 부제목
-  ```
-  This is an H2
-  ```
+
+> 문법:
+```
+This is an H2
+```
+
+> 적용예시:
+
   This is an H2
   -------------
+  
 - 글머리: 1~6까지만 지원
-  ```
-  # This is a H1
-  ## This is a H2
-  ### This is a H3
-  #### This is a H4
-  ##### This is a H5
-  ###### This is a H6
-  ```
-  # This is a H1
-  ## This is a H2
-  ### This is a H3
-  #### This is a H4
-  ##### This is a H5
-  ###### This is a H6
+> 문법: 
+```
+# This is a H1
+## This is a H2
+### This is a H3
+#### This is a H4
+##### This is a H5
+###### This is a H6
+```
+
+> 적용예시:
+# This is a H1
+## This is a H2
+### This is a H3
+#### This is a H4
+##### This is a H5
+###### This is a H6
   
 ## 2.2. 인용문_BlockQuote
 이메일에서 사용하는 `>`블럭인용문자를 이용한다.
@@ -102,7 +114,7 @@ tags: Summary
 2. 두번째
 
 - 순서없는 목록(글러미 기호: `*`, `+`, `-` 지원)
-
+> 문법:
 ```
 * 빨강
   * 파랑
@@ -114,6 +126,7 @@ tags: Summary
   - 파랑
     - 노랑
  ```
+> 적용예시:
 * 빨강
   * 파랑
     * 노랑
@@ -125,16 +138,95 @@ tags: Summary
     - 노랑
 
 혼합해서 사용도 가능하다.
+> 문법:
 ```
 * 1단계
   - 2단계
     + 3단계
 ```
+> 적용예시:
 * 1단계
   - 2단계
     + 3단계
 
-## 2.4 코드_Code
+## 2.4. 코드_Code
+4개의 공백(Spacebar) 또는 하나의 탭(Tab)으로 들여쓰기를 만나면 변환되기 시작하여 들여쓰지 않은 행을 만날때까지 변환이 계속된다.
+### 2.4.1. 들여쓰기_indent
+> 문법: 
+```
+This is a normal paragraph:
 
-    
+  This is an intented sentence.
 
+end intented sentence.
+```
+
+> 적용예시:
+***
+This is a normal paragraph:
+   
+    This is an intented sentence.
+   
+end intented sentence.
+***
+> 줄바꿈을 하지 않으면 인식이 제대로 안되는 문제가 발생한다.
+```
+This is a normal paragraph:
+  This is an intented sentence.
+end intented sentence.
+```
+> 적용예시:
+***
+This is a normal paragraph:
+  This is an intented sentence.
+end intented sentence.
+***
+### 2.4.2 코드 블럭
+코드 블럭은 다음과 같이 2가지 방식을 사용할 수 있습니다.
+- `<pre><code>{code}</code></pre>` 태그를 이용하는 방법
+> 문법:
+```
+<pre>
+<code>
+public class BootSpringBootApplication{
+  pulic static void main(String[] args){
+    System.out.println("Hello, Github");
+  }
+}
+</code>
+</pre>
+```
+> 적용예시:
+<pre>
+<code>
+public class BootSpringBootApplication {
+  pulic static void main(String[] args) {
+    System.out.println("Hello, Github");
+  }
+}
+</code>
+</pre>
+
+- 코드 블럭 코드(" ``` ")을 이용하는 방법
+
+> 문법: 
+<pre>
+```
+public class BootSpringBootApplication {
+  public static void main(String[] args) {
+    System.out.println("Hello, Github");
+  }
+}
+```
+</pre>
+
+> 적용예시:
+```
+public class BootSpringBootApplication {
+  public static void main(String[] args) {
+    System.out.println("Hello, Github");
+  }
+}
+```
+
+> 깃헙(github)에서는 코드 블럭 코드(" ``` ")시작점에 사용하는 언어를 선언하여 [문법강조(Syntax highlighting)](https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks#syntax-highlighting)이 가능하다.
