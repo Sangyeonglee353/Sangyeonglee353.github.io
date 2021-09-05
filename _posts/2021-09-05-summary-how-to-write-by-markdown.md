@@ -5,6 +5,8 @@ subtitle:   "[기초문법] Markdown_마크다운"
 categories: Summary
 tags: Summary
 ---
+<!-- 목차 생성-->
+{:toc}
 
 # 1. 마크다운에 관하여
 ## 1.1. 마크다운이란?
@@ -250,7 +252,7 @@ public class BootSpringBootApplication {
   }
 }
 ```
-# 2.5. 수평선 `<hr/>` 
+## 2.5. 수평선 `<hr/>` 
 아래 줄은 모두 수평선을 만든다. 마크다운 문서를 미리보기로 출력할 때 _페이지 나누기_ 용도로 많이 사용한다.
 
 > 문법:
@@ -269,7 +271,7 @@ public class BootSpringBootApplication {
 - - -
 -------------------------
 
-# 2.6. 링크_Link
+## 2.6. 링크_Link
 - 참조링크
 ```
 키워드에 링크를 넣는 형태 1
@@ -308,7 +310,7 @@ Link: [Google](https://google.com, "google link")
 * 외부링크: <https://google.com>
 * 이메일링크: <address@example.com>
 
-# 2.7. 강조
+## 2.7. 강조 `<em>`
 > 문법:
 ```
 *single asterisks*
@@ -326,19 +328,106 @@ __double underscores__
 
 > 문장 중간에 사용할 경우에는 앞뒤로 띄어쓰기를 해주는 것이 좋다.
 
-# 2.8. 이미지_Image
+## 2.8. 이미지_Image
 ```
 // 문법
 ![대체 텍스트](이미지 경로)
 ![대체 텍스트](이미지 경로 "포인터 텍스트")
 
 // 적용코드
-![Alt text](/path/to/img.jpg)
-![Alt text](/path/to/img.jpg "Optional title")
+![Programmer](/assets/img/pl_sample.jpg)
+![Programmer](/assets/img/pl_sample.jpg "Programmer")
 ```
-![Programmer](/asset/img/pl_sample.jpg)
-![Programmer](/asset/img/pl_sample.jpg "Programmer")
 
+![Programmer](/assets/img/pl_sample.jpg)
+![Programmer](/assets/img/pl_sample.jpg "Programmer")
 
+> 마크다운 문법에서는 이미지 크기 조절을 따로 지원하지 않는다. 
+```
+따라서 HTML의 <img src="" width="" height=""> 태그를 이용한다.
+// 문법
+<img src="이미지 경로" width="가로넓이" height="세로넓이" title="포인터 텍스트" alt="대체 텍스트"></img>
+
+// 적용코드
+<img src="/assets/img/pl_sample.jpg" width="450px" height="300px" title="Programmer" alt="Programmer"></img><br/>
+<img src="/assets/img/pl_sample.jpg" width="450px" height="300px" title="Programmer" alt="Programmer"></img>
+```
+
+<img src="/assets/img/pl_sample.jpg" width="450px" height="300px" title="Programmer" alt="Programmer"></img><br/>
+<img src="/assets/img/pl_sample.jpg" width="450px" height="300px" title="Programmer" alt="Programmer"></img>
+
+# 2.9. 줄바꿈 `<br/>`
+3칸 이상 띄어쓰기(`   `)를 하면 줄이 바뀐다.
+```
+* 줄 바꿈을 하기 위해서는 문자 마지막에서 3칸 이상 띄어쓰기를 해야 한다.___ <- 띄어쓰기
+줄바꿈 짠!!
+```
+* 줄 바꿈을 하기 위해서는 문자 마지막에서 3칸 이상 띄어쓰기를 해야 한다.   
+줄바꿈 짠!!
+***
+
+# 2.10. 표 `<table>...</table>`
+- 기본 구조
+```
+| name | description | age |
+| ---- | ----------- | --- |
+| Lee  | You can do it! | 25 |
+| Kim  | Simple is the Best! | 30 |
+| Yun  | We are the Champions! | 45 |
+```
+| name | description | age |
+| ---- | ----------- | --- |
+| Lee  | You can do it! | 25 |
+| Kim  | Simple is the Best! | 30 |
+| Yun  | We are the Champions! | 45 |
+- 표 정렬
+  - 왼쪽 정렬 :--
+  - 오른쪽 정렬 --:
+  - 가운데 정렬 :--:
+```
+| name | description | age |
+| :---- | -----------: | :---: |
+| Lee  | You can do it! | 25 |
+| Kim  | Simple is the Best! | 30 |
+| Yun  | We are the Champions! | 45 |
+```
+| name | description | age |
+| :---- | -----------: | :---: |
+| Lee  | You can do it! | 25 |
+| Kim  | Simple is the Best! | 30 |
+| Yun  | We are the Champions! | 45 |
+
+# 2.11. 주석
+> 문법:
+```
+<!--
+마크다운에서 주석 처리하기
+-->
+```
+> 적용예시:
+<!--
+마크다운에서 주석 처리하기
+-->
+
+# 2.12. 각주 `<sup>...</sup>`
+본문의 어떤 부분을 설명하거나 보충하기 위해 본문 아래쪽에 별도로 작성하는 간단한 설명문으로서 주로 내용의 출처를 밝힐 때 사용됩니다.
+```
+최근 스칼라는 매우 인기가 높은 언어이다.[^scala]
+[\^scala]: 스칼라는 마틴 오더스크가 개발한 함수형 언어이다.
+```
+
+최근 스칼라는 매우 인기가 높은 언어이다.[^scala]
+[\\^scala] : 스칼라는 마틴 오더스크가 개발한 함수형 언어이다.
+
+# 2.13 목차 생성하기
+문서 내에 사용된 헤딩 태그등을 이용하여 '{:toc}'입력 시 목차가 자동 생성된다. 상단 목차 참고.
+
+# 3. 마크다운 사용기
+## 3.1. 위지윅(WSYWIG) 에디터
+우리가 흔하게 접하는 웹에서 사용되는 에디터(네이버, 다음, 구글 등)이 대부분 위지윅 에디터에 속하며 기본적으로 HTML을 이용하여 스타일을 적용하여 문자을 꾸미는 형태를 취하게 된다. 그래서 하루패드와 같은 마크다운 에디터의 View 영역의 내용을 복사하여 붙여넣기를 하면 대체적으로 View영역에서 보이는 그대로 복사되는 편이다. 다만, 붙여넣기 이후에 문장들을 수정하려고 할 때 문제가 되는데, 이는 스타일이 포함된 태그가 수정과정에서 변형되면서 전체적인 영향을 끼치는 탓이다. 티스토리 블로그에서는 쉽지 않고, 워드프레스의 경우에는 마크다운으로 작성된 포스트를 HTML로 변환해주는 기능을 활용하는 것이 좋다. 결론은 **복사해서 붙여넣기하면 가급적이면 본문은 수정하지 않는 것** 이 좋다.
+## 3.2. 깃헙(Github), 비트버킷(Bitbucket)과 요비(Yobi) 등
+최근 유행하는 협업개발플랫폼의 경우에는 마크다운을 변환하는 컨버터 기능을 기본탑재하고 있기 때문에 마크다운 문법으로 작성한 텍스트를 그대로 복사해서 붙여넣거나 업로드하는 것만으로 마크다운의 적용이 가능하다.
+## 3.3. MS워드 적용
+View 영역의 항목을 그대로 붙여넣거나 HTML 내보내기 등으로 생성한 파일을 불러오는 형태로 사용가능하다. 적용한 헤더를 워드가 읽어드리면서 목차에 적용하기 때문에 이를 활용하면 목차까지도 손쉽게 적용이 가능해진다.
 
 
