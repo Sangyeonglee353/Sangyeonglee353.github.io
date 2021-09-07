@@ -353,11 +353,11 @@ __double underscores__
 
 // 적용코드
 <img src="/assets/img/pl_sample.jpg" width="450px" height="300px" title="Programmer" alt="Programmer"><br/>
-<img src="/assets/img/pl_sample.jpg" width="450px" height="300px" title="Programmer" alt="Programmer">
+<img src="/assets/img/pl_sample.jpg" width="40%" height="30%" title="Programmer" alt="Programmer">
 ```
 
 <img src="/assets/img/pl_sample.jpg" width="450px" height="300px" title="Programmer" alt="Programmer"><br/>
-<img src="/assets/img/pl_sample.jpg" width="450px" height="300px" title="Programmer" alt="Programmer">
+<img src="/assets/img/pl_sample.jpg" width="40%" height="30%" title="Programmer" alt="Programmer">
 
 ## 2.9. 줄바꿈 `<br/>`
 3칸 이상 띄어쓰기(`   `)를 하면 줄이 바뀐다.
@@ -440,4 +440,14 @@ __double underscores__
 ## 3.3. MS워드 적용
 View 영역의 항목을 그대로 붙여넣거나 HTML 내보내기 등으로 생성한 파일을 불러오는 형태로 사용가능하다. 적용한 헤더를 워드가 읽어드리면서 목차에 적용하기 때문에 이를 활용하면 목차까지도 손쉽게 적용이 가능해진다.
 
+## ○ 참고문서
+- [78 Tools for writing and previewing Markdown](https://mashable.com/archive/markdown-tools)
+- [John gruber 마크다운 번역](https://nolboo.kim/blog/2013/09/07/john-gruber-markdown/)
+- [깃허브 취향의 마크다운 번역](https://nolboo.kim/blog/2014/03/25/github-flavored-markdown/)
+- [허니몬의 마크다운 작성법](https://www.slideshare.net/ihoneymon/ss-40575068)
+- [ihoneymon / how to write by markdown](https://gist.github.com/ihoneymon/652be052a0727ad59601)
+- Notion.so(<https://www.notion.so/product>)
+- Atom(<https://atom.io/>)
+- Visual Studio Code(<https://code.visualstudio.com/>)
+- Notepad++(<https://notepad-plus-plus.org/>)
 
